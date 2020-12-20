@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset = "UTF-8" />
+<head>
+    <style>
+        body {background-color: rgb(129, 174, 182);}
+        p {background-color: #2493a7;font-size: 200%;}
+        h1   {color: rgb(0, 0, 0);}
+        p    {color: rgb(0, 0, 0);}
+        p1   {color: rgb(0, 0, 0);font-size: 150%;}
+        .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                }
+        label{font-size: 150%;}
+        .column {
+            float: left;
+                }
+        
+  </style>
+  <div> <link rel="stylesheet" href="Olympic-Guesser.css"></div>
+    
+    
+<title>    
+    Olympic Medal Guessinator 3000
+</title>
+</head>
+<body>
+    <p style="text-align:center; font-size: 300%" >If You Were An Olympic Athlete</p>
+    
+    <div class="row">
+    <div class="column">
+        <form action="{{ url_for('main') }}" method="POST">
+            <label for="nationality">Nationality:</label><br>
+            <select id="nationality" name="nationality" size="7">
+                <option value="17">Canada</option>
+                <option value="117">USA</option>
+                <option value="83">Niger</option>
+                <option value="52">Independants</option>
+                <option value="82">Nigeria</option>
+                <option value="99">Russia</option>
+                <option value="41">Great Britain</option>
+                <option value="97">Romania</option>
+                <option value="61">Kazhakstan</option>
+                <option value="39">France</option>
+                <option value="13">Brazil</option>
+                <option value="91">Poland</option>
+                <option value="2">Argentian</option>
+                <option value="59">Jordan</option>
+                <option value="60">Japan</option>
+                <option value="20">China</option>
+                <option value="34">Spain</option>
+                <option value="4">Australia</option>
+                <option value="57">Italy</option>
+                <option value="102">Serbia</option>
+                <option value="85">New Zealand</option>
+                <option value="81">Netherlands</option>
+                <option value="43">Germany</option>
+                <option value="11">Belarus</option>
+                <option value="116">Ukraine</option>
+                <option value="35">Estonia</option>
+                <option value="36">Ethiopia</option>
+                <option value="7">Bahrain</option>
+                <option value="84">Norway</option>
+                <option value="101">Slovakia</option>
+                <option value="25">Croatia</option>
+                <option value="49">Hungary</option>
+                <option value="106">Sweden</option>
+                <option value="44">Greece</option>
+                <option value="54">Ireland</option>
+                <option value="28">Denmark</option>
+                <option value="58">Jamaica</option>
+                <option value="37">Fiji</option>
+                <option value="26">Cuba</option>
+                <option value="9">Belarus</option>
+                <option value="3">Armenia</option>
+                <option value="72">Lithuania</option>
+                <option value="27">Malaysia</option>
+                <option value="64">Czechoslovakia</option>
+                <option value="118">Korea</option>
+                <option value="62">Uzbekistan</option>
+                <option value="98">Kenya</option>
+                <option value="24">South Africa</option>
+                <option value="113">Columbia</option>
+                <option value="21">Turkey</option>
+                <option value="110">Ivory Coast</option>
+                <option value="105">Taiwan</option>
+                <option value="108">Slovakia</option>
+                <option value="50">Tajikistan</option>
+                <option value="15">Indonesia</option>
+                <option value="6">Bulgaria</option>
+                <option value="14">Azerbaijan</option>
+                <option value="103">Bahrain</option>
+                <option value="8">Switzerland</option>
+                <option value="42">Burundi</option>
+                <option value="74">Georgia</option>
+                <option value="53">Mexico</option>
+                <option value="31">Iran</option>
+                <option value="90">Egypt</option>
+                <option value="93">Phillipines</option>
+                <option value="112">North Korea</option>
+                <option value="100">SIN</option>
+                <option value="111">Trinidad and Tobago</option>
+                <option value="45">Grenada</option>
+                <option value="30">Dominican Republic</option>
+                <option value="65">Kosovo</option>
+                <option value="38">Finland</option>
+                <option value="71">Morocco</option>
+                <option value="94">Puerto Rico</option>
+                <option value="95">Qatar</option>
+                <option value="56">Israel</option>
+                <option value="75">Mongolia</option>
+                <option value="107">Thailand</option>
+                <option value="51">India</option>
+                <option value="73">Moldova</option>
+                <option value="114">UAE</option>
+                <option value="120">Venezuela</option>
+                <option value="5">Austria</option>
+                <option value="0">Algeria</option>
+                <option value="92">Portugal</option>
+                <option value="46">Guatemala</option>
+                <option value="123">Zimbabwe</option>
+                <option value="80">Namibia</option>
+                <option value="88">Paraguay</option>
+                <option value="22">Cameroon</option>
+                <option value="19">Chile</option>
+                <option value="121">Vietnam</option>
+                <option value="63">Kyrgistan</option>
+                <option value="1">Angola</option>
+                <option value="16">Cameroon</option>
+                <option value="77">Montenegro</option>
+                <option value="86">Oman</option>
+                <option value="55">Iraq</option>
+                <option value="48">Hong Kong</option>
+                <option value="12">Bolivia</option>
+                <option value="23">Cook Islands</option>
+                <option value="40">Gabon</option>
+                <option value="76">Malta</option>
+                <option value="115">Uganda</option>
+                <option value="47">Guyana</option>
+                <option value="66">Laos</option>
+                <option value="70">Luxemburg</option>
+                <option value="18">Republic of Congo</option>
+                <option value="89">Peru</option>
+                <option value="78">Monaco</option>
+                <option value="79">Myanmar</option>
+                <option value="109">Turkmenistan</option>
+                <option value="32">Eritrea</option>
+                <option value="10">Benin</option>
+                <option value="33">El Salvador</option>
+                <option value="96">Refugees Tean</option>
+                <option value="104">Suriname</option>
+                <option value="29">Dominica</option>
+                <option value="119">Vanuatu</option>
+                <option value="68">Libya</option>
+                <option value="87">Panama</option>
+                <option value="122">Yemen</option>
+                <option value="67">Latvia</option>
+
+            </select><br>
+
+            <label for="sex">Gender:</label><br>
+            <select id="sex" name="sex" size="2"><br>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+            <br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br>
+
+            <label fors="height">Height(Meters):</label><br>
+            <input type="number" step="0.01" id="height" name="height"><br>
+
+            <label for="weight">Weight(Kilograms):</label><br>
+            <input type="number" id="weight" name="weight"><br>
+
+            <label for="sport">Sport:</label><br>
+            <select id="sport" name="sport" size="7">
+                <option value="2">Athletics</option>
+                <option value="25">Volleyball</option>
+                <option value="0">Aquatics</option>
+                <option value="22">Taekwondo</option>
+                <option value="20">Shooting</option>
+                <option value="10">Soccer</option>
+                <option value="27">Wrestling</option>
+                <option value="17">Rowing</option>
+                <option value="5">Boxing</option>
+                <option value="13">Handball</option>
+                <option value="14">Field Hockey</option>
+                <option value="21">Table Tennis</option>
+                <option value="4">Basketball</option>
+                <option value="1">Archery</option>
+                <option value="12">Gymnastics</option>
+                <option value="19">Sailing</option>
+                <option value="7">Cycling</option>
+                <option value="16">Pentathalon</option>
+                <option value="9">Fencing</option>
+                <option value="26">Weightlifting</option>
+                <option value="18">Rugby</option>
+                <option value="24">Triathalon</option>
+                <option value="8">Equestrian</option>
+                <option value="15">Judo</option>
+                <option value="23">Tennis</option>
+                <option value="6">Canoe</option>
+                <option value="3">Badminton</option>
+                <option value="11">Golf</option>
+              </select>
+              <br>
+
+            <input type="submit">
+        </form>
+    </div>
+    <div class = "column"> <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Olympic_Rings.svg" width="500" height="600" class="center" alt="Olympic Rings">
+    </div>
+</div>     
+          <div class="center" align="center">
+            {% if result %}
+                {% for variable, value in original_input.items() %}
+                    <b>{{ variable }}</b> : {{ value }}
+                {% endfor %}
+                <br>
+                <br> <p1>Predicted Medal:</p1>
+                   <p style="font-size:50px">{{result}}</p>
+            {% endif %}
+           </div>
+
+</body>
+</html>
