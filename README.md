@@ -14,3 +14,13 @@ The first phase:
    this by using excel to convert their date of birth to days and then divided by 365. 
    
    The second aspect of the data I had to change was the medals. The medals was the key section of the model, without it nothing would work. However there were three columns of data related to medals. One column for bronze, one for silver, and one for gold. There was a number in each column for each athlete related to the medals. This organization of the data was not ideal to make a model off of. So I had to figure out a way to convert three columns of medals into one. 
+   
+   With code in Jupyter notebook, I parsed through each line in the CSV file and created a new column called medals. This column had 4 possible inputs: 0,1,2,3, with each number corresponding to a medal that they won. 1 for bronze, 2 for silver, 3 for gold, and 0 for no medals won. I did this by parsing through the columns with some code in python and using a series of if statements created column medals. 
+   
+   Now that I had my data all set, I had to convert the categorical data to numerical numbers. This I did with some simple python code. 
+   Then I created the model using a simple keras neural network. I did a bunch of combinations of nodes and layers and this combination resulted in best accuracy of 49%. 
+   
+   
+   The Second Phase:
+    Now that I had my model created I decided to create the basic HTML and CSS framework of my website. I created the basic layout that you see on the website where the user manually inputs the height, weight, age. Then for their gender, nationality, and sport, I created a dropdown menu for the user to select the correct variable that they wanted. Eventually this became a problem, because, when I was training the model, has turned all categorical data into numerical data for example: "United States" became "27". I obviously didn't want a user toi have to manually input a number 
+   
