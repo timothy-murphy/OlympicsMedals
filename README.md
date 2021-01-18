@@ -22,5 +22,17 @@ The first phase:
    
    
    The Second Phase:
-    Now that I had my model created I decided to create the basic HTML and CSS framework of my website. I created the basic layout that you see on the website where the user manually inputs the height, weight, age. Then for their gender, nationality, and sport, I created a dropdown menu for the user to select the correct variable that they wanted. Eventually this became a problem, because, when I was training the model, has turned all categorical data into numerical data for example: "United States" became "27". I obviously didn't want a user toi have to manually input a number 
+    Now that I had my model created I decided to create the basic HTML and CSS framework of my website. I created the basic layout that you see on the website where the user manually inputs the height, weight, age. Then for their gender, nationality, and sport, I created a dropdown menu for the user to select the correct variable that they wanted. Eventually this became a problem, because, when I was training the model, has turned all categorical data into numerical data for example: "United States" became "27". I obviously didn't want a user too have to manually input a number instead of the name of the country. So for the value of the input of a country I had to match up each number and to each name of the nationallity, sport, and gender. The process was painstaking, but I did not know what else to do. Now that I had my framework done, I decided to make the CSS section. Due to time constraints, I did not have enough time to make everything pretty, but I am going to do an update. 
+    
+  
+  
+  
+ The Third Phase:
+     The third phase was the actual Flask Application, which itself, was actually not a lot of code, but was actually a pretty confusing topic at first. Flask has two main parts of it called Get and Post. The Get part recieves user data, and then the Post uses the model to quantify the data and then Post the results. This took a little while for me to understand, but eventually I got the hang of it. 
+     
+     
+     
+     
+How to run the applicaiton:
+    You will have to download all the files, and then you run the application through the application.py
    
